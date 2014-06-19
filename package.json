@@ -1,0 +1,32 @@
+{
+  "name": "simplify-polyline",
+  "version": "0.0.5",
+  "description": "Using Ramer-Douglas-Peucker algorithm, eliminates geometrically redundant points on polylines.",
+  "main": "simplify-polyline.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theelee13/node-simplify-polyline.git"
+  },
+  "keywords": [
+    "polyline",
+    "maps",
+    "routes",
+    "simple",
+    "simplify",
+    "geometry",
+    "ramer-douglas-peucker",
+    "douglas-peucker",
+    "peucker",
+    "algorithm",
+    "coordinates"
+  ],
+  "author": "theelee13",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theelee13/node-simplify-polyline/issues"
+  },
+  "homepage": "https://github.com/theelee13/node-simplify-polyline"
+}
