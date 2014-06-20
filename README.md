@@ -3,6 +3,20 @@ node-simplify-polyline
 
 A Nodejs module for simplifying the geometry of a polyline made up of multiple--possibly redundant--points.
 
+Usage
+===
+````
+var simple = require('simplify-polyline');
+newArray = simple.simplify(documentArray,epsilon);
+````
+Parameters:
+
+documentArray:
+  an array of objects containing *at least* an 'x' key and a 'y' key, representing a coordinate. This array should be in order of the line it constructs.
+
+epsilon:
+   epsilon: a value, representing a distance, which all points are compared to in the algorithm. The larger the epsilon, the fewer points accepted. A sufficiently large epsilon will only return two points, the first and last.
+
 Concept
 ===
 The module works on the Ramer-Douglas-Peucker algorithm, which attempts to eliminate unnecessary points from a polyline. A description of the algorithm may be found here: 
