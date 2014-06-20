@@ -3,7 +3,7 @@ module.exports={
 		return RDP(list,epsilon);			 
 	}
 }
-RDP = function (pointList, epsilon){
+var RDP = function (pointList, epsilon){
 	/*
 	 *	Part A of the algorithm sifts through the array and finds the point that is the farthest away from the line created
 	 *	between pointList[firstValue] and pointList[lastValue], marking its value (for comparison) and its index in the 
@@ -48,12 +48,12 @@ RDP = function (pointList, epsilon){
 }
 
 //distance formulas normally comprise of square roots of squares. I'm breaking this down a little bit.
-distanceFromPointToLine = function (p,a,b){
+var distanceFromPointToLine = function (p,a,b){
 	return Math.sqrt(distanceFromPointToLineSquared(p,a,b));
 }
 
 //This is the difficult part. Commenting as we go.
-distanceFromPointToLineSquared = function (p, i, j){
+var distanceFromPointToLineSquared = function (p, i, j){
 	var lineLength = pointDistance(i,j);//First, we need the length of the line segment.
 	if(lineLength==0){	//if it's 0, the line is actually just a point.
 		return pointDistance(p,a);
@@ -74,7 +74,7 @@ distanceFromPointToLineSquared = function (p, i, j){
 }
 
 //returns distance between two points. Easy geometry.
-pointDistance = function (i,j){
+var pointDistance = function (i,j){
 	return sqr(i.x-j.x)+sqr(i.y-j.y);
 }
 
