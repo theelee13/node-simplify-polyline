@@ -1,6 +1,6 @@
 {
   "name": "simplify-polyline",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Using Ramer-Douglas-Peucker algorithm, eliminates geometrically redundant points on polylines.",
   "main": "simplify-polyline.js",
   "scripts": {
