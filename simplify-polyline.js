@@ -56,7 +56,7 @@ var distanceFromPointToLine = function (p,a,b){
 var distanceFromPointToLineSquared = function (p, i, j){
 	var lineLength = pointDistance(i,j);//First, we need the length of the line segment.
 	if(lineLength==0){	//if it's 0, the line is actually just a point.
-		return pointDistance(p,a);
+		return pointDistance(p,i);
 	}
 	var t = ((p.x-i.x)*(j.x-i.x)+(p.y-i.y)*(j.y-i.y))/lineLength; 
 
